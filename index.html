@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>DeCode</h1>
+      <a href="#" id="aheader">      <span>More Tools Soon</span></a>
+    </header>
+    <main>
+      <div class="head">
+        <span> FERRAMENTA DE GERAÇÃO DE SENHA </span>
+        <h1>Gerador de senha personalizada</h1>
+        <p>
+          Use seu gerador de senha para criar imediatamente uma senha
+          segura.
+        </p>
+      </div>
+      <div class="content">
+        <div class="password">
+          <div class="password-input">
+            <input id="passwordId" type="text"></input>
+          </div>
+          <div class="icon" style="cursor:pointer;" title="Reload/Copy">
+            <img
+            src="./imgs/cached_FILL0_wght400_GRAD0_opsz48.svg"
+            alt="reload"
+            width="40px"
+            id="btnGerar" title="Gerar senha"
+            >
+            <img
+              src="./imgs/content_copy_FILL0_wght400_GRAD0_opsz48.svg"
+              alt="copy"
+              width="36px" id="copyId"  title="Copiar"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="personalizar">
+        <div class="personalize-title">
+          <h2>Personalize sua senha</h2>
+          <hr />
+        </div>
+        <div class="personalize-bottom">
+          <div class="personalize-number-groote">
+            <span>Número de caracteres</span>
+            <label for="lengthId" class="value"></label>
+            <input type="range"id="lengthId" min="6" max="24" value="12"/>
+            <span>Palavra anterior:</span>
+            <input type="text" id="specialTextId" placeholder="Digite alguma coisa...">
+          </div>
+          <div class="checkbox-options">
+            <span>Opções:</span>
+            <div class="options">
+              <div class="checkbox-option">
+                <input type="checkbox"  id="chkAll">
+                <label for="chkAll">Todos caracteres</label>
+              </div>
+              <div class="checkbox-option">
+                <input type="checkbox"  id="chkSpecial">
+                <label for="chkSpecial">Caracteres especiais</label>
+              </div>
+              <div class="checkbox-option">
+                <input type="checkbox"  id="chkNumbers">
+                <label for="chkNumbers">Números</label>
+              </div>
+              <div class="checkbox-option">
+                <input type="checkbox"  id="chkUppercase">
+                <label for="chkUppercase">Letras maiúsculas</label>
+              </div>
+              <div class="checkbox-option">
+                <input type="checkbox" id="chkLowercase">
+                <label for="chkLowercase">Letras minúsculas</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer>
+
+      <div class="social">
+        <a href="https://github.com/deataide" target="_blank"> <span>GitHub</span></a>
+        <a href="https://www.linkedin.com/in/deivid-ataide-b482281ba/" target="_blank">        <span>LinkedIn</span></a>
+      </div>
+      <script src="./js/skeletons.js"></script>
+  </footer>
+  </body>
+</html>
