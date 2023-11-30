@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Josefin+Sans:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Josefin+Sans:wght@400;500&display=swap");
 
 * {
   padding: 0;
@@ -9,14 +9,14 @@
 body {
   background: #f6f7f7;
   color: #202020;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   height: 100vh;
   width: 100%;
   overflow-x: hidden;
 }
 
 h1 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 main {
@@ -108,7 +108,7 @@ main {
     width: 90%;
   }
 
-  input[type='range'] {
+  input[type="range"] {
     width: 90% !important;
   }
 }
@@ -139,7 +139,7 @@ main {
   margin: 20px 0;
 }
 
-.personalize-number-groote input[type='text'] {
+.personalize-number-groote input[type="text"] {
   background: #202020;
   height: 50px;
   color: #ffffff;
@@ -150,7 +150,7 @@ main {
   transition: 1s;
 }
 
-.personalize-number-groote input[type='text']:focus {
+.personalize-number-groote input[type="text"]:focus {
   transform: scale(1.05);
   transition: 1s;
   background: #ffffff;
@@ -164,7 +164,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 header a {
@@ -195,7 +195,7 @@ header a {
 .personalize-title h2 {
   color: #202020;
   margin: 15px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .personalize-title hr {
@@ -215,7 +215,7 @@ header a {
   margin: 40px auto;
   text-shadow: white 2px 2px 2px;
 }
-input[type='range'] {
+input[type="range"] {
   display: block;
   -webkit-appearance: none;
   background-color: #bdc3c7;
@@ -225,7 +225,7 @@ input[type='range'] {
   margin: 0 auto 20px auto;
   outline: 0;
 }
-input[type='range']::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   background-color: rgb(0, 139, 128);
   width: 30px;
@@ -235,11 +235,11 @@ input[type='range']::-webkit-slider-thumb {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
-​ input[type='range']::-webkit-slider-thumb:hover {
+​ input[type="range"]::-webkit-slider-thumb:hover {
   background-color: white;
   border: 2px solid rgb(0, 139, 128);
 }
-input[type='range']::-webkit-slider-thumb:active {
+input[type="range"]::-webkit-slider-thumb:active {
   transform: scale(1.6);
 }
 
@@ -249,10 +249,10 @@ input[type='range']::-webkit-slider-thumb:active {
   height: 50px;
 }
 
-input[type='checkbox'] + label {
+input[type="checkbox"] + label {
   color: #202020;
 }
-input[type='checkbox']:checked + label {
+input[type="checkbox"]:checked + label {
   color: rgb(0, 139, 128);
   font-weight: bold;
 }
@@ -264,4 +264,23 @@ input[type='checkbox']:checked + label {
 .social a {
   margin: 10px;
   color: #202020;
+}
+
+.generateButton {
+  border-radius: 10px;
+  height: 50px;
+  margin-top: 10px;
+  padding: 10px;
+  outline: none;
+  font-size: 20px;
+  transition: 1s;
+  background: rgb(0, 139, 128);
+  color: white;
+}
+
+.generateButton:hover {
+  transform: scale(1.05);
+  background: white;
+  cursor: pointer;
+  color: black;
 }
